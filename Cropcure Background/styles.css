@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-image: url(images/background.png);
+    color: #080808;
+    background-position: center;
+}
+
+/* Header / Navbar */
+#navbar {
+    width: 100%;
+    background-color: #fff;
+    /* border-bottom: 2px solid #00cec9; */
+    padding: 0px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.heading {
+    color: #000;
+    font-weight: bold;
+    font-size: 60px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Animation */
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        letter-spacing: normal;
+        opacity: 1;
+    }
+}
+.visible {
+    opacity: 1; /* Visible when scrolled into view */
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+/* Custom Heading Styles */
+h1.custom-h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    background: linear-gradient(180deg, #000000, #ff0062);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+h2.custom-h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    background: linear-gradient(180deg, #000000, #5008b5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h3.custom-h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    background: linear-gradient(180deg,#020020, #ae23e1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+    /* border-bottom: 2px solid #00ba7f; */
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+h5.mb-3 {
+    font-size: 30px;
+    margin-bottom: 11px;
+}
+
+/* Container for Model Section */
+.model-section {
+    padding: 30px;
+    margin-top: 100px; /* Adjust this based on navbar height */
+    border-radius: 20px; /* Increased border-radius for softer corners */
+
+}
+
+/* Unified Button and Input Styling */
+.custom-input, .custom-button {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #00cec9;
+    background-color: #81ecec;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.custom-button:hover, .custom-input:hover {
+    background-color: #00ba7f;
+    border-color: #ffffff;
+}
+
+/* Treatment Section */
+#treatmentContainer {
+    margin-top: 20px;
+    font-size: 35px;
+}
+
+#treatmentText {
+    font-size: 1.2rem;
+    color: #333333;
+}

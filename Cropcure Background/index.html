@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Model</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
+</head>
+
+<body>
+    <script src="app.js"></script>
+
+    <!-- Navigation bar -->
+    <div id="navbar" class="sticky-top p-2 text-white nav-header">
+        <h3 class="heading">CropCure Model</h3>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="container mt-3 p-4 shadow-lg rounded-3 model-section" id="model">
+        
+        <!-- Main Heading (h1) -->
+        <h1 class="custom-h1">Crop Cure - Disease Detection</h1>
+        <!-- Subheading (h2) -->
+        <h2 class="custom-h2">This Model Detects Crop Diseases & Recommand Cures</h2>
+        
+        <!-- Section Heading (h3) -->
+        <h3 class="custom-h3">Model Use Case</h3>
+
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <h5 class="mb-3">Image Input :</h5>
+                <input type="file" id="imageInput" class="custom-input mb-3" accept="image/*">
+                <button class="custom-button d-block mx-auto mb-3" onclick="detectImage()">Detect</button>
+            </div>
+        </div>
+
+        <div class="row mt-3 text-center" id="imageContainer">
+            <div class="col-md-12">
+                <div></div>
+            </div>
+        </div>
+
+        <!-- Section Heading (h3) for treatment information -->
+        <h3 class="custom-h3">Treatment Recommendations:</h3>
+
+        <div class="row mt-3 text-center" id="treatmentContainer">
+            <div class="col-md-12">
+                <h5 class="mt-4">Treatment:</h5>
+                <p id="treatmentText">Here you will see the suggested treatment after detection.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
