@@ -1,0 +1,503 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    ::selection {
+        background-color: #00fb9b9f;
+        color: #000000;
+        text-shadow: 1px 1px 3px #333333;
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(#fff);
+    color: #080808;
+}
+/* ============================================================HOME============================================================ */
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Images/background.png);
+    background-size: cover;
+    margin-top: 10px;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+.container {
+    padding: 10px 5%;
+    margin-top: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed; /* Keeps the nav fixed at the top */
+    top: 0;
+    left: 0;
+    background: #fff;
+    /* background: linear-gradient(180deg, #ababab, #fff); */
+    width: 100%; /* Ensures the nav bar spans across the screen */
+    /* background-color: transparent; Keeps the nav bar transparent */
+    z-index: 1000; /* Ensures it stays above the content */
+}
+
+.logo {
+    width: 140px;
+    opacity: 0.8; 
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    text-shadow: 0 0 8px rgba(13, 199, 209, 0.8), /* White glow */
+                0 0 10px rgba(10, 209, 236, 0.7), 
+                0 0 12px rgba(24, 220, 214, 0.6);
+    color: rgb(0, 0, 0); /* Optional: change text color on hover */
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #2D9E35;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Adds padding to the top to prevent content overlap with fixed nav */
+body {
+    padding-top: 80px; /* Adjust this based on the height of your navbar */
+}
+
+
+.header-text{
+    -webkit-animation: header-text 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	animation: header-text 1.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    margin-top: 15%;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px rgba(104, 102, 102, 0.5);
+}
+
+@-webkit-keyframes header-text {
+    0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+    }
+}
+@keyframes header-text {
+    0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+    }
+}
+
+
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span.first-part {
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    background: linear-gradient(180deg, #ff004f, #000); /* Gradient colors */
+    -webkit-background-clip: text; /* For Safari */
+    -webkit-text-fill-color: transparent; /* For Safari */
+    background-clip: text; /* For other browsers */
+    text-fill-color: transparent; /* For other browsers */
+}
+
+.header-text h1 span.second-part {
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    background: linear-gradient(180deg, #5FEBBA, #000); /* Gradient colors */
+    -webkit-background-clip: text; /* For Safari */
+    -webkit-text-fill-color: transparent; /* For Safari */
+    background-clip: text; /* For other browsers */
+    text-fill-color: transparent; /* For other browsers */
+}
+
+
+header-text h1 span1{
+    color: #2D9E35;
+
+}
+
+.btn {
+    position:absolute;
+    left: 80px; /* Adjust this value for the left margin */
+    bottom: 200px; /* Adjust this value for the bottom margin */
+    width: fit-content;
+    border: 1px solid #00d0ad;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #000;
+    transition: background 0.5s;
+    box-shadow: 2px 2px 4px #ababab;
+}
+
+
+.btn:hover{
+    color: #fff;
+    background: #00ba7f;
+}
+
+/* ========================================================About Us======================================================== */
+
+
+#about{
+    padding: 80px 0;
+    color: #ababab;
+    background-image: url(Images/background1.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 10%;
+}
+
+
+.about-col-2{
+    flex-basis: 55%;
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #080808;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Animation */
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        letter-spacing: normal;
+        opacity: 1;
+    }
+}
+.visible {
+    opacity: 1; /* Visible when scrolled into view */
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+
+
+/*================================ Description================================ */
+
+
+.section-title {
+    font-size: 2.5em;
+    color: #2c3e50;
+    /* text-align: center; */
+    margin-bottom: 10px;
+}
+
+.section-description {
+    font-size: 1.2em;
+    color: #34495e;
+    /* text-align: center; */
+    margin-bottom: 40px;
+}
+
+.subsection {
+    margin-bottom: 30px;
+}
+
+.subsection-title {
+    font-size: 1.8em;
+    background: linear-gradient(180deg,#020020, #ae23e1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.subsection-description {
+    font-size: 1em;
+    color: #637e7c;
+}
+
+/* ================================SERVICES============================== */
+
+#services {
+    padding: 30px 0;
+    background-image: url(Images/background2.gif);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.services-list {
+    display: flex;
+    flex-direction: column; /* Set flex direction to column */
+    align-items: flex-start; /* Align to the left side */
+    margin-top: 50px;
+    width: 40%; /* Adjust the width of the service cards */
+}
+
+.service-item {
+    background: linear-gradient(135deg, #00ffd58c, #ffffff94);
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    margin-bottom: 20px; /* Add some spacing between items */
+    width: 100%; /* Make sure items take full width */
+}
+
+.service-item i {
+    font-size: 50px;
+    color:#333333
+}
+
+.service-item h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #333333;
+}
+
+.service-item a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.service-item p {
+    text-decoration: none;
+    color: #34495e;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.service-item:hover {
+    background: linear-gradient(215deg, #fff, #ff004f);
+    transform: translateY(-7px);
+    box-shadow: 0px 0px 33px #ff004f;
+}
+
+/* ==============================================APP================================ */
+
+#app {
+    padding: 80px 0;
+    color: #ababab;
+    background-image: url(Images/background3.gif);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Ensure app container takes up the entire height */
+}
+
+.ap {
+    display: block;
+    position: absolute; /* Position it relative to the app container */
+    bottom: 390px; /* Distance from the bottom */
+    right: 340px; /* Distance from the left */
+    border: 2px solid #009e89;
+    padding: 14px 100px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #000;
+    transition: background 0.5s;
+    box-shadow: 2px 2px 4px #ababab;
+
+}
+
+.ap:hover {
+    color: #fff;
+    background: #00ba7f;
+}
+
+/* ===========================================================================ENHANCEMENTS============================================================= */
+
+#enhance {
+    padding: 80px 0;
+    color: #ababab;
+    background-image: url(Images/background4.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Ensure app container takes up the entire height */
+}
+/* CSS for aligning text in the update class and restricting width */
+/* CSS for aligning text in the update class and restricting width */
+.update {
+    text-align: left;
+    max-width: 58%;  /* Restrict the width to half of the screen */
+    padding: 20px;
+    margin-left: 0;  /* Align to the left */
+    margin-right: auto;  /* Prevent centering */
+}
+
+
+/* Optional: Adding some padding and margin for better readability */
+.update h2.section-title, 
+.update h2.subsection-title {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.update p.section-description, 
+.update p.subsection-description {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 0.9em;
+}
+
+/* ========================================================Contact=============================================================== */
+
+#contact {
+    padding: 80px 0;
+    color: #ababab;
+    background-image: url(Images/background5.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Ensure app container takes up the entire height */
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: #333333;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #333333;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons p{
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 15px;
+    color: #333333;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #046345;
+    transform: translateY(-5px);
+    text-shadow: 0 0 8px rgba(13, 199, 209, 0.8), /* White glow */
+                0 0 10px rgba(134, 10, 236, 0.7), 
+                0 0 12px rgba(220, 24, 138, 0.6);
+
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.copyright{
+    width: 100%;
+    display: block;
+    position: absolute; /* Position it relative to the app container */
+    bottom: 0px;
+    text-align:center;
+    padding: 17px 0;
+    background: whitesmoke;
+    font-weight: 300;
+    margin-top: 20px;
+}
