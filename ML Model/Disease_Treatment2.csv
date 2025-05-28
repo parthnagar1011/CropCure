@@ -1,0 +1,39 @@
+Disease,Treatment
+Apple___Apple_scab,"Use fungicides like captan or mancozeb, prune infected areas, remove fallen leaves."
+Apple___Black_rot,"Apply fungicides such as thiophanate-methyl, avoid overhead watering, and remove infected fruit."
+Apple___Cedar_apple_rust,"Use fungicides like myclobutanil, remove nearby juniper trees, prune infected branches."
+Apple___healthy,No treatment required.
+Blueberry___healthy,No treatment required.
+Cherry_(including_sour)___Powdery_mildew,"Apply fungicides like sulfur or myclobutanil, remove infected leaves, increase air circulation."
+Cherry_(including_sour)___healthy,No treatment required.
+Corn_(maize)___Cercospora_leaf_spot_Gray_leaf_spot,"Apply fungicides such as azoxystrobin, rotate crops, use resistant varieties."
+Corn_(maize)___Common_rust_,"Use fungicides like mancozeb or copper sprays, plant resistant hybrids, control weed hosts."
+Corn_(maize)___Northern_Leaf_Blight,"Apply fungicides such as propiconazole, use resistant hybrids, rotate crops."
+Corn_(maize)___healthy,No treatment required.
+Grape___Black_rot,"Apply fungicides like myclobutanil or captan, remove infected leaves and fruit, prune vines."
+Grape___Esca_(Black_Measles),"No chemical control available, prune infected vines, maintain proper soil nutrition."
+Grape___Leaf_blight_(Isariopsis_Leaf_Spot),"Use copper-based fungicides, remove infected leaves, improve air circulation."
+Grape___healthy,No treatment required.
+Orange___Haunglongbing_(Citrus_greening),"No cure available, remove infected trees, control psyllid vectors, use disease-free planting material."
+Peach___Bacterial_spot,"Use copper-based bactericides, prune infected twigs, plant resistant varieties."
+Peach___healthy,No treatment required.
+"Pepper,_bell___Bacterial_spot","Apply copper-based bactericides, remove infected plants, avoid overhead watering."
+"Pepper,_bell___healthy",No treatment required.
+Potato___Early_blight,"Use fungicides like chlorothalonil or mancozeb, rotate crops, remove infected plant debris."
+Potato___Late_blight,"Apply fungicides such as metalaxyl, remove infected plants, avoid wet conditions."
+Potato___healthy,No treatment required.
+Raspberry___healthy,No treatment required.
+Soybean___healthy,No treatment required.
+Squash___Powdery_mildew,"Use fungicides like sulfur or neem oil, improve air circulation, remove infected leaves."
+Strawberry___Leaf_scorch,"Apply fungicides such as myclobutanil or copper sprays, remove infected leaves, improve air circulation."
+Strawberry___healthy,No treatment required.
+Tomato___Bacterial_spot,"Use copper-based bactericides, remove infected plants, avoid overhead watering."
+Tomato___Early_blight,"Apply fungicides like chlorothalonil, remove infected leaves, rotate crops."
+Tomato___Late_blight,"Use fungicides such as metalaxyl, remove infected plants, avoid wet conditions."
+Tomato___Leaf_Mold,"Apply fungicides like chlorothalonil, improve ventilation, remove infected leaves."
+Tomato___Septoria_leaf_spot,"Apply fungicides such as mancozeb, remove infected leaves, rotate crops."
+Tomato___Spider_mites_Two-spotted_spider_mite,"Use miticides or insecticidal soaps, increase humidity, introduce predatory mites."
+Tomato___Target_Spot,"Apply fungicides such as azoxystrobin, remove infected leaves, improve air circulation."
+Tomato___Tomato_Yellow_Leaf_Curl_Virus,"Remove infected plants, use insecticides to control whiteflies, plant resistant varieties."
+Tomato___Tomato_mosaic_virus,"Remove infected plants, disinfect tools, control insect vectors."
+Tomato___healthy,No treatment required.
